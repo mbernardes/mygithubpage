@@ -272,7 +272,7 @@ a:hover
 	vertical-align: middle;
 }
 
-.image-item-overlay .overlay
+/*.overlay
 {
 	background:#3498db;
 	opacity:0;
@@ -288,13 +288,16 @@ a:hover
 	transition: opacity 0.4s ease-in-out;
 }
 
-.image-item-overlay:hover .overlay 
+.overlay:hover
 {
 	opacity:0.7;
 }
+*/
 
-.image-item-overlay .image-description
+.image-description
 {
+	background:rgba(52, 152, 219, 0.7);
+
 	color: #ecf0f1;
 	position: absolute; 
 	top: 0;
@@ -309,12 +312,12 @@ a:hover
 	transition: all 0.5s ease-in-out;
 }
 
-.image-item-overlay:hover .image-description
+.image-description:hover
 {
 	opacity:1;
 }
 
-.image-item-overlay .image-description p
+.image-description p
 {
 	color:inherit;
 	font-family: inherit;
