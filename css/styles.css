@@ -140,6 +140,13 @@ a:hover
 	float:left;
 	width: 100%;
 	background-color: #ecf0f1;
+	display: table;
+}
+
+.content
+{
+	display: table-cell;
+    vertical-align: middle;
 }
 
 .short-section
