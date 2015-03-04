@@ -19,6 +19,28 @@
   line-height: 1.2;
 }
 
+#hero2 {
+}
+
+#hero2 .primary-content {
+  padding-bottom: 20px;
+}
+
+#hero2 h1 {
+  font-size: 70px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #D26;
+  margin-bottom: 0.1em;
+}
+
+#hero2 .tagline {
+  font-size: 24px;
+  margin-bottom: 0.8em;
+  line-height: 1.2;
+}
+
+
 /* ---- hero masonry ---- */
 
 .hero-masonry {
@@ -39,7 +61,7 @@
   width: 46.9%; /* juse a lil under  47 */
   margin: 10px 1%;
   float: left;
-  border-radius: 8px;
+ /*border-radius: 8px;*/
 }
 
 /* necessary for proper sizing with margins */
@@ -77,14 +99,73 @@
 
 .hero-item.has-example img {
   display: block;
-  max-width: 100%;
-  /*border-radius: 8px 8px 0 0;*/
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .hero-item.has-example .example-title {
+  /*padding: 5px 10px;*/
+  padding-bottom: 10px;
+
+  margin: 0;
+}
+
+/**/
+
+.project-description
+{
+  font-size: 13px;
+  font-weight: bold;
+  background: white;
+  color: black;
+  display: block;
+  border-radius: 5px 5px 4px 4px;
+}
+
+.hero-item.has-example2
+{
+  background: #ffffff;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.hero-item.has-example2 p:first-of-type
+{
+  font-weight: 600;
+  text-align: left;
+}
+
+.hero-item.has-example2 p:nth-of-type(2)
+{ 
+  font-weight: 300;
+  text-align: left;
   padding: 5px 10px;
   margin: 0;
 }
+
+.hero-item.has-example2 a {
+  font-size: 13px;
+  font-weight: bold;
+  background: #3498db;
+  color: white;
+  display: block;
+  border-radius: 5px 5px 4px 4px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.hero-item.has-example2 img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.hero-item.has-example2 .example-title {
+  padding: 5px 10px;
+  margin: 0;
+}
+
+/**/
+
 
 /* enough width for 4 columns */
 @media screen and ( min-width: 720px ) {
@@ -110,6 +191,14 @@
   }
 
   #hero .tagline {
+    font-size: 32px;
+  }
+
+  #hero2 h1 {
+    font-size: 120px;
+  }
+
+  #hero2 .tagline {
     font-size: 32px;
   }
 
