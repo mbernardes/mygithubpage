@@ -126,7 +126,7 @@ var examplesData = [
 var examplesData2 = [
   {
     title: "Autism Travel Train",
-    description: "MSc. project. A serious game which uses virtual reality to prepare individuals with Autism Spectrum Disorder to uses buses as a mean of transportation. Developed using Unity and Oculus Rift.",
+    description: "MSc. project. A serious game which uses virtual reality to prepare individuals with Autism Spectrum Disorder to use buses as a mean of transportation. Developed using Unity and Oculus Rift.",
     url: "",
     type: "",
     image: 'images/projectsMargin/TravelTrain.png'
