@@ -8,14 +8,6 @@ body
 
 header
 {
-	/*padding: 40px 0px;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    margin: -15% 0 0 -25%;
-    */
-
     display: table-cell;
     vertical-align: middle;
     color: #ecf0f1;
@@ -27,7 +19,6 @@ header p
 	font-size: 1.4vw;
 	color: #ecf0f1;
 	font-weight: 400;
-	line-height: 2.1vw;
 }
 
 header p a
@@ -44,17 +35,17 @@ header p a:hover
 
 footer
 {
+	font-size: 1.3vw;
 	padding: 0.35vw;
 	text-align: center;
-	font-size: 0.9vw;
 }
 
 h1
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
-	font-size: 4.9vw;
 	font-weight: 400;
+	font-size: 4.9vw;
 	margin: 1.75vw 0;
 	letter-spacing: 0.7vw;
 }
@@ -62,7 +53,7 @@ h1
 h2
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 4.2vw;
+	font-size: 5vw;
 	font-weight: 400;
 	margin: 2.1vw 0;
 	letter-spacing: 0.5px;
@@ -79,22 +70,22 @@ h3
 
 h4
 {
-	font-size: 1.68vw;
+	font-size: 1.9vw;
 	font-weight: 200;
 	text-align: center;
 	margin: 0.7vw 0vw;
 }
 
-.block
-{
-	display: inline-block;
-}
-
 h5
 {
-	margin: 1.05vw 20%;
 	font-size: 1.26vw;
 	font-weight: 300;
+	margin: 1.05vw 20%;
+}
+
+.contact-way p
+{
+	font-size: 1.24vw;
 }
 
 a
@@ -102,6 +93,11 @@ a
 	text-decoration: none;
 	font-weight: 600;
 	color: inherit;
+}
+
+.block
+{
+	display: inline-block;
 }
 
 .center
@@ -136,7 +132,6 @@ a:hover
 	border-width: 0.7vw;
 	border-style: solid;
 	border-color: #ecf0f1;
-	/*border-color: #daa0a1;*/
 	float:left;
 	width: 100%;
 	background-color: #ecf0f1;
@@ -151,7 +146,6 @@ a:hover
 
 .short-section
 {
-	/*min-height: 90vh;*/
 	min-height: 97vh;
 }
 
@@ -288,28 +282,6 @@ a:hover
 	text-align: left;
 }
 
-/*.overlay
-{
-	background:#3498db;
-	opacity:0;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-
-	-webkit-transition: opacity 0.4s ease-in-out;
-	-moz-transition: opacity 0.4s ease-in-out;
-	-o-transition: opacity 0.4s ease-in-out;
-	-ms-transition: opacity 0.4s ease-in-out;
-	transition: opacity 0.4s ease-in-out;
-}
-
-.overlay:hover
-{
-	opacity:0.7;
-}
-*/
-
 .image-description
 {
 	background:rgba(52, 152, 219, 0.7);
@@ -339,7 +311,6 @@ a:hover
 {
 	color:inherit;
 	font-family: inherit;
-	/*font-size: 28px;*/
 	font-size: 1.9vw;
 	margin: 0;
 	display: table-cell;
@@ -351,7 +322,6 @@ a:hover
 {
 	width:100%;
 	border: 1px solid #e1e1e1;
-	/*box-shadow: 0 0px 2px #000000;*/
 	vertical-align: middle;
 }
 
@@ -368,7 +338,6 @@ a:hover
 .icon
 {
 	width: 4%;
-	/*margin: 5px;*/
 }
 
 .arrow-icon:hover
@@ -418,3 +387,39 @@ a:hover
 	width: 100%;
 	height: 1px;
 }
+
+/*Phones*/
+@media (max-width:768px){
+	h1
+	{
+		 font-size: 6.2vw;
+	}
+	h2
+	{
+		font-size: 6vw;
+	}
+	h4
+	{
+		font-size: 2.5vw;
+	}
+	header p
+	{
+		font-size: 2.2vw;
+		padding: 0 10%;
+	}
+	footer
+	{
+		font-size: 2vw;
+	}
+	.section .contact-way p
+	{
+		padding: 0 19%;
+		font-size: 2vw;
+		line-height: 3vw;
+	}
+	.icon
+	{
+		width: 5%;
+	}
+}
+
