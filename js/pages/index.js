@@ -127,8 +127,8 @@ var examplesData2 = [
   {
     title: "Autism Travel Train",
     description: "MSc. project. A serious game which uses virtual reality to prepare individuals with Autism Spectrum Disorder to use buses as a mean of transportation. Developed using Unity and Oculus Rift.",
-    url: "",
-    type: "",
+    url: "https://vimeo.com/134968652",
+    type: "Watch",
     image: 'images/projectsMargin/TravelTrain.png'
   },
   {
