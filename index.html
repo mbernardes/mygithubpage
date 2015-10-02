@@ -69,7 +69,8 @@
           </div>
 
           <div class="row">
-            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project-image" type="button" data-toggle="modal" data-target="#{{project.name|removespaces}}" ng-repeat="project in projectList.projects">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project-image" ng-repeat="project in projectList.projects">
+              <a href="#" data-toggle="modal" data-target="#{{project.name|removespaces}}">
               <div class="image-wrapper overlay-fade-in">
                 <img ng-src="{{project.image}}" class="img-responsive" alt="Interests">
                 <div class="image-overlay-content">
