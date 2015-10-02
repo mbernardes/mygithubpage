@@ -1,141 +1,132 @@
 <!DOCTYPE html>
-<!--[if lte IE 8]>     <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
-<html>
-	<head>
-			<title>Miguel Bernardes</title>
-			<!-- meta property etc-->
-			<link rel="stylesheet" type="text/css" href="css/styles.css">
-  			<link rel="stylesheet" href="css/hero.css" /><!-- From Masonry (http://masonry.desandro.com/) -->
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-	</head>
-	<body class="index-page" data-page="index">
-		
-		<div id="preload">
-			<img src="images/icons/icon-02.png"/>
-			<img src="images/icons/icon-04.png"/>
-			<img src="images/icons/icon-08.png"/>
-			<img src="images/icons/icon-10.png"/>
-		</div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Miguel Bernardes</title>
 
-		<div class="section menu-section" id="top">
-			<header>
-				<h1>Miguel Bernardes</h1>
-				<p>Hello! My name is Miguel Bernardes and I am a Computer Science graduate from the University of Coimbra, Portugal. Read more <a href="#about">about me</a>, see <a href="#work">what I've been up to</a> and <a href="#contact">get in contact</a>.</p>
-				<!--<p>Hello! My name is Miguel Bernardes and I am a Computer Science student at the University of Coimbra, Portugal. Read more <a href="#about">about me</a>, see <a href="#work">what I've been up to</a> and <a href="#contact">get in contact</a>.</p>-->
-			</header>
-		</div>
-		<!-- About -->
-		
-		<div class="section">
-			<a id="about"></a>
-			<br>
-			<!--<a href="#top"><img class="icon arrow-icon" href="#top" src="images/icons/icon-01.png"></a>
-			<a href="#work"><img class="icon arrow-icon-down" href="#work" src="images/icons/icon-09.png"></a>-->
-			
-			<div class="content">
-				<h2>What I Love</h2>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/img-hover.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-				<div id="hero">
-				    <div class="primary-content">
-				      <div class="hero-masonry">
-				        <div class="grid-sizer"></div>
-				      </div>
-				    </div>
-			 	</div>
-				
-			</div>
-		</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
 
-		<!-- Portfolio -->
-		<div class="section">
-			<a id="work"></a>
-			<br>
-			<!--<a href="#top"><img class="icon arrow-icon" href="#top" src="images/icons/icon-01.png"></a>
-			<a href="#work"><img class="icon arrow-icon-down" href="#work" src="images/icons/icon-09.png"></a>-->
-			
-			<div class="content">
-				<h2>Projects</h2>
+  </head>
+  <body ng-app="PersonalWebsite">
+    
+    <div class="container-fluid">
+      <div class="text-center"
+        <!-- Cover Section -->
+        <div class="section cover-section" id="top">
+          <header>
+            <h1>Miguel Bernardes</h1>
+            <!--<p>Hello! My name is Miguel Bernardes and I am a Computer Science graduate from the University of Coimbra, Portugal. Read more <a href="#about">about me</a>, see <a href="#work">what I've been up to</a> and <a href="#contact">get in contact</a>.</p>-->
+          </header>
+        </div>
 
-				<div id="hero2">
-				    <div class="primary-content">
-				      <div class="hero-masonry">
-				        <div class="grid-sizer"></div>
-				      </div>
-				    </div>
-			 	</div>
-			
-			<br>
-			<h4 class="block">Download my CV here</h4>
-        	<!--Download designed by Garrett Knoll from the Noun Project (http://thenounproject.com/term/download/29074/)-->
-        	<a class="center" href="https://dl.dropboxusercontent.com/u/4353431/cv-miguel-bernardes.pdf" target="_blank"><img class="icon" href="#" src="images/icons/download.png"></a>
+        <!-- Skills Section -->
+        <div class="section">
+          <h2>Skills</h2> 
+          <img src="images/head.png" class="img-responsive big-image" alt="Skills" style="margin: 0 auto">
+        </div>
 
-        	</div>
-		</div>
+        <!-- Interests Section -->
+        <div class="section">
+          <h2>Interests</h2>
+          <img src="images/heart.png" class="img-responsive big-image" alt="Skills" style="margin: 0 auto">
+        </div>
+        
+        <!-- Projects Section -->
+        <div class="section" ng-controller="MainController">
+          <h2>Projects</h2>
 
-		<!-- Contact -->
-		<div class="section short-section">
-			<div class="separator">&nbsp;</div>
-			<a id="contact"></a>
-			<!--<a href="#top"><img class="icon arrow-icon" href="#top" src="images/icons/icon-01.png"></a>-->
-			
-			<div class="content">
-				<h2>Let's talk!</h2>
-				<div class="contact-way">
-					<img class="icon email-icon" alt="send email" src="images/icons/icon-07.png">
-					<h4>Email me</h4>
-					<p>Feel free to write me an email at <a href="mailto:mrsbernardes@gmail.com">mrsbernardes@gmail.com</a> if you have any questions.</p>
-				</div>
+          <!-- Modal -->
+          <div class="modal fade" id="{{project.name|removespaces}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-repeat="project in projectList.projects">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title" id="myModalLabel">{{project.name}}</h3>
+                </div>
+                <div class="modal-body">
+                  <img ng-src="{{project.image}}" class="img-responsive" alt="Interests">
+                  <br>
+                  <p>{{project.description}}</p>
+                  <div ng-if="project.hasLink">
+                    <p>{{project.type}} it <a target="_blank" href="{{project.link}}">here</a>!</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>{{project.skills}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<div class="contact-way">
-					<img class="icon linkedin-icon" alt="LinkedIn" src="images/icons/icon-03.png">
-					<h4>Connect with me</h4>
-					<p>You can view my LinkedIn <a href="http://pt.linkedin.com/pub/miguel-bernardes/90/568/974"  target="_blank">profile</a> to find out more about me and add me to your connections.</p>
-				</div>
-			</div>
-		</div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project-image" type="button" data-toggle="modal" data-target="#{{project.name|removespaces}}" ng-repeat="project in projectList.projects">
+              <div class="image-wrapper overlay-fade-in">
+                <img ng-src="{{project.image}}" class="img-responsive" alt="Interests">
+                <div class="image-overlay-content">
+                  <h4>{{project.name}}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="section">
+          <h4 class="block">Download my CV here</h4><!--Icon designed by Garrett Knoll from the Noun Project (http://thenounproject.com/term/download/29074/)-->
+          <a class="center" href="https://dl.dropboxusercontent.com/u/4353431/cv-miguel-bernardes.pdf" target="_blank">
+            <img class="tiny-icon" alt="downloadCV" src="images/download.png">
+          </a>
+        </div>
 
+        <!-- Contacts Section -->
+        <div class="section" id="contacts">
+          <h2>Let's Talk</h2>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+              <img class="small-icon" alt="send email" src="images/email.png">
+              <h4>Email me</h4>
+              <p>Feel free to write me an email at <a href="mailto:mrsbernardes@gmail.com">mrsbernardes@gmail.com</a> if you have any questions.</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+              <img class="small-icon" alt="LinkedIn" src="images/linkedin.png">
+              <h4>Connect with me</h4>
+              <p>You can view my LinkedIn <a href="http://pt.linkedin.com/pub/miguel-bernardes/90/568/974"  target="_blank">profile</a> to find out more about me and add me to your connections.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    function showDiv() {
+      document.getElementById('welcomeDiv').style.display = "block";
+    }
+    </script>
 
-		<script type="text/javascript">
-			$(function() {
-			  $('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000);
-			        return false;
-			      }
-			    }
-			  });
-			});
-			//From http://css-tricks.com/snippets/jquery/smooth-scrolling/
-		</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
-	<script src="bower_components/classie/classie.js"></script>
-    <script src="bower_components/eventie/eventie.js"></script>
-    <script src="bower_components/doc-ready/doc-ready.js"></script>
-    <script src="bower_components/get-style-property/get-style-property.js"></script>
-    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
-    <script src="bower_components/imagesloaded/imagesloaded.js"></script>
-    <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
-    <script src="bower_components/get-size/get-size.js"></script>
-    <script src="bower_components/matches-selector/matches-selector.js"></script>
-    <script src="bower_components/outlayer/item.js"></script>
-    <script src="bower_components/outlayer/outlayer.js"></script>
-    <script src="bower_components/masonry/masonry.js"></script>
-    <script src="js/controller.js"></script>
-    <script src="js/pages/index.js"></script>
-    <!--<script type="js/jquery.masonry.ordered.js"></script>-->
+    <!-- Modules -->
+    <script src="js/app.js"></script>
 
-	</body>
-	<footer>
-		<p>&copy; Miguel Bernardes 2014</p>
-	</footer>
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/projects.js"></script>
+
+  </body>
 </html>
