@@ -1,0 +1,90 @@
+{
+  "projects": [
+    {
+      "name": "SnakeVR",
+      "description": "A virtual reality game inspired on the classic snake game.",
+      "image": "images/snakevr.png",
+      "skills": "| Unity | Blender | C# | Oculus Rift |",
+      "hasLink": 1,
+      "type": "Watch",
+      "link": "https://vimeo.com/145851484" 
+    },{
+      "name": "Autism Travel Train",
+      "description": "A serious game with virtual reality to prepare individuals with Autism to use buses for transportation.",
+      "image": "images/traveltrain.png",
+      "skills": "| Unity | C# | Oculus Rift | Biopac MP150 | Python |",
+      "hasLink": 1,
+      "type": "Watch",
+      "link": "https://vimeo.com/134968652" 
+    },
+    {
+      "name": "Autism Joint Attention",
+      "description": "Application which compares the responsiveness of individuals with Autism to joint attention cues in both immersive and non-immersive virtual reality environments.",
+      "image": "images/ja.png",
+      "skills": "| Unity | C#  | Oculus Rift | SMI's Eye Tracking HMD Upgrade | SMI's RED500 eye tracker | Python |",
+      "hasLink": 0
+    },
+    {
+      "name": "Personal Website",
+      "description": "This website, with my skills, interests, projects and contact information.",
+      "image": "images/site.png",
+      "skills": "| HTML | CSS | Javascript | AngularJs |",
+      "hasLink": 0
+    },
+    {
+      "name": "WallMotion",
+      "description": "A simple sandbox game where you hit boxes to make creatures fall and watch them interact with each other.",
+      "image": "images/wallmotion.png",
+      "skills": "| Unity | C# | PrimeSense Sensor |",
+      "hasLink": 1,
+      "type": "Watch",
+      "link": "https://vimeo.com/120284569"
+    },
+    {
+      "name": "Nittwit",
+      "description": "A platform game where you play as a mutant octopus on a mission to save your creator.",
+      "image": "images/nittwit.png",
+      "skills": "| Flash | ActionScript |",
+      "hasLink": 1,
+      "type": "Play",
+      "link": "http://1000webgames.com/arcade/nittwit.swf"
+    },
+    {
+      "name": "Playsketch",
+      "description": "Proof of concept: racing game for mobile platforms. Draw the track, take a picture of it, and play.",
+      "image": "images/playsketch.png",
+      "skills": "| Unity | C# | Android | iOS |",
+      "hasLink": 1,
+      "type": "Watch",
+      "link": "http://vimeo.com/89658037"
+    },
+    {
+      "name": "Reactive Pacman",
+      "description": "Reactive agents were programmed, with distinct personalities, to control Pacman and 3 ghosts, using John DeNero's Pacman.",
+      "image": "images/iia.png",
+      "skills": "| Python |",
+      "hasLink": 0
+    },
+    {
+      "name": "Semantic IMDB",
+      "description": "A web application that explores browsing, semantic search and recommendation systems techniques, using content extracted from IMDB.",
+      "image": "images/ws.png",
+      "skills": "| Java | HTML | JSP | Servlets | MySQL | Jena | Protégé | TDB | OWL |",
+      "hasLink": 0
+    },
+    {
+      "name": "IMDB Crawler",
+      "description": "A web crawler which screen scraps information from IMDB and sends it to another application, which writes the data to a database and makes it available via a web application.",
+      "image": "images/is.png",
+      "skills": "| Java | HTML5 | JSP | Servlets | JBoss | PostgreSQL | Java Persistence API | EJB |",
+      "hasLink": 0
+    },
+    {
+      "name": "Spycook",
+      "description": "For this project, recipes were used as a data source to perform data mining using a machine learning approach. The results were presented in a web application",
+      "image": "images/sigc.png",
+      "skills": "| Java | HTML | CSS | JSP | Clustering | Topic Modeling | Classification | Polarity Analysis |",
+      "hasLink": 0
+    }
+  ]
+}
